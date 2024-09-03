@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --container-bg-color: #242424;
+  --link-bg-color: #333;
+  --highlight-color: greenyellow;
+}
+
+body.light-mode {
+  --bg-color: #fff;
+  --text-color: #000;
+  --container-bg-color: #f4f4f4;
+  --link-bg-color: #ddd;
+  --highlight-color: #007bff;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer {
+  width: 300px;
+  min-height: 300px;
+  background-color: var(--container-bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.profilePic {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.profileContainer {
+  text-align: center;
+}
+
+.profileContainer h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.profileContainer h4 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: var(--highlight-color);
+}
+
+.profileContainer q {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.profileLinks {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.profileLinks a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.7rem;
+  background-color: var(--link-bg-color);
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 7px;
+}
+
+.profileLinks a:hover {
+  opacity: 0.8;
+}
+
+.theme {
+  background-color: var(--bg-color);
+  border: none;
+  text-align: right;
+}
+
+.theme button {
+  border: none;
+  background-color: var(--bg-color);
+  margin-top: 30px;
+  margin-right: 35px;
+}
+
+.theme button i {
+  color: var(--text-color);
+  font-size: 30px;
+}
+
+@media (max-width: 576px) {
+  .theme button i {
+    font-size: 20px;
+  }
+
+  .mainContainer {
+    margin-top: 30px;
+  }
+}
